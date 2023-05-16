@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.continer{
+    background-color: black;
+   min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+.continer .header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.header ul  {
+    display: flex;
+    list-style: none;
+  
+    
+}
+
+.header ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 12px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    
+   
+}
+.header ul li a:hover{
+  color: red;
+}
+.logo{
+    width: 40px;
+    
+}
+.content{
+   
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.content .text{
+    width:40%;
+    color: white;
+
+}
+.content .text p{
+    margin: 20px 0px;
+}
+.content .text h2{
+    font-size: 40px;
+    margin: 19px 0px;
+    color: red;
+}
+.content .text a{
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    text-transform: uppercase;
+    color: red;
+    
+}
+.text a:hover{
+    transform: scale(1.2);
+    color: aqua;
+}
+.image{
+    width:25%
+}
+.image img{
+    width: 200px;
+}
+.icons{
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%)
+ 
+}
+.icons img{
+    width: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);
+}
+@media (max-width:900px) {
+    .image{
+        width:40%
+    }
+    
+}
+
+
+
+
+

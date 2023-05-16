@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(#200016,#10001f);
+    height: 100vh;
+    color: white;
+}
+.ll{
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    position: fixed;
+    width: 95%;
+    z-index: 1;
+}
+header .logo{
+    text-transform: uppercase;
+}
+
+header ul{
+    display: flex;
+   gap: 15px;
+   
+}
+ul li{
+    list-style: none;
+
+   
+
+}
+  li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.5s;
+    padding: 10px 10px;
+
+
+}
+
+header ul li a:hover , .active{
+    background-color: aqua;
+    border-radius: 10px;
+    
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+overflow: hidden;
+
+
+}
+.main::after{
+    content:'' ;
+    position: absolute;
+    bottom: 0;
+    
+    background: linear-gradient(to top,#200016,transparent);
+    width: 100%;
+    height:30px ;
+}
+.main img{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#moon{
+    mix-blend-mode:screen ;
+    transform: translateY(85px)
+
+}
+
+.moon1{
+    transform: translateY(-150px)
+}
+
+.contant{
+    padding: 30px;
+    
+}
+
+.contant h1{
+    margin: 40px;
+    font-size: 30px;
+}
+.contant p{
+    margin:40px;
+    font-size: 20px;
+    
+
+}
