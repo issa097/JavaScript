@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  width: 100%;
+  gap: 6px;
+  font-weight: 700;
+  color: white;
+  background-color: blueviolet;
+}
+
+.title {
+  background-color: red;
+  padding: 10px 0;
+  width: 20vw;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow:5px 5px 0px  black;
+  text-transform: capitalize;
+  
+
+
+}
+.title span{
+   padding: 0px 6px ;
+   width: 20vw;
+
+}
+.box {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.square {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 20px;
+  box-shadow:5px 5px 0px  black;
+
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  text-transform: capitalize;
+
+}
+
+.square:hover{
+    /* background-color: black; */
+    cursor: pointer;
+}
+
+@media screen and (max-width:710px) {
+    .game{
+   background-color: blueviolet;
+   width: 100%;
+
+}
+
+.box {
+ width:300px;
+  }
+  .title {
+    background-color: red;
+    padding: 10px 0;
+    width: 20vw;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow:5px 5px 0px  black;
+    text-transform: capitalize;
+    
+  
+  
+  }
+
+
+    }
+    @media (min-width:712px){
+        .game{
+            background-color: blueviolet;
+            width: 100%;
+         
+         }
+         .box {
+            width:300px;
+             }
+    }
+
